@@ -3,6 +3,79 @@
     <head>
       <meta charset="utf-8"/>
       <title>Registration_form</title>
-      <link rel="stylesheet" 
+      <link rel="stylesheet" href="styles/button.css"/>
+      <link rel="stylesheet" href="styles/fonts.css"/>
+      <link rel="stylesheet" href="styles/style.css"/>
     </head>
+    <body>
+        <section class="registration">
+            <div class="registration_form">
+                <div>
+                    <h1>Форма регистрации</h1>
+                </div>
+                <form>
+                    <div class="input_information">
+                        <label for="User_name">Фамилия Имя Отчество</label>
+                        <input type="text" id="User_name" required  pattern="[A-Za-zА-Яа-яЁё\s]+"placeholder="Иванов Иван Иванович" title="Введите ваше имя" minlength="4" maxlength="20"/>
+                    </div>
+                    /*<div class="input_information">
+                        <label for="User_date">Дата рождения</label>
+                        <input type="date" id="User_date" required title="Указывайте вашу настоящую дату рождения"/>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_country">Страна проживания</label>
+                        <select id="User_country" required title="Указывайте ваше гражданство">
+                            <option selected>Россия</option>
+                            <option>Беларусь</option>
+                            <option>Казахстан</option>
+                            <option>Украина</option>
+                            <option>Китай</option>
+                        </select>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_gender">Укажите пол</label>
+                        <div id="User_gender" required>
+                            <label for="gender_female">Женский</label>
+                            <input type="radio" id="gender_female" name="user_gender"/>
+                            <label for="gender_male">Мужской</label>
+                            <input type="radio" id="gender_male" name="user_gender"/>
+                        </div>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_email">Почта</label>
+                        <input type="email" id="User_email" required title="Указывайте ваш рабочий email" placeholder="example@gmail.com" minlength="4" maxlength="30"/>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_phone">Телефон</label>
+                        <input type="tel" id="User_phone" required placeholder="+7-xxx-xxx-xx-xx"  pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" title="Указывайте ваш рабочий телефон"/>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_password">Пароль</label>
+                        <input type="password" id="User_password" required placeholder="example123" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Не менее 8 символов, а также используйте только A-Z, 0-9" minlength="8" maxlength="16"/>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_repassword">Повторите пароль</label>
+                        <input type="password" id="User_repassword" required placeholder="example123" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Не менее 8 символов, а также используйте только A-Z, 0-9" minlength="8" maxlength="16"/>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_reason">Ваша мотивация</label>
+                        <textarea placeholder="Опишите вашу мотивацию вступить в клуб как можно более подробнее" required minlength="50" maxlength="300"></textarea>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_file">Прикрепите файл</label>
+                        <input type="file" id="User_file" required accept=".png,.jpg,.pdf"  title="Только форматы png, jpg, pdf"/>
+                    </div>
+                    <div class="input_information">
+                        <label for="User_agree">Согласие на обработку персональных данных</label>
+                        <input type="checkbox" required id="User_agree"/>
+                    </div>
+                    <div class="buttons">
+                        <button class="primary">Зарегестрироваться</button>
+                        <button class="secondary">Очистить форму</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+  
+    </body>
 </html>

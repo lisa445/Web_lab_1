@@ -1,0 +1,30 @@
+.primary, .secondary{
+    font-family: 'RobotoL';
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid  #173C1C;
+    cursor: pointer;
+}
+
+.primary{
+    border-radius: 10px;
+    background:#173C1C ;
+    color:#F9F6EF;
+    
+}
+.secondary{
+    color:#173C1C;
+    background: transparent;
+}
+
+.primary:hover{
+    background: #051808;
+    border: 1px solid  #051808;
+}
+
+.secondary:hover{
+    border: 1px solid  #25612D;
+    background:#25612D ;
+    color:#F9F6EF;
+}
