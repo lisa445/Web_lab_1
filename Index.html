@@ -9,16 +9,14 @@
     </head>
     <body>
         <section class="registration">
-            <div class="registration_form">
-                <div>
+            <div class="registration_form">    
+                <form action="registration.html">
                     <h1>Форма регистрации</h1>
-                </div>
-                <form>
                     <div class="input_information">
                         <label for="User_name">Фамилия Имя Отчество</label>
-                        <input type="text" id="User_name" required  pattern="[A-Za-zА-Яа-яЁё\s]+"placeholder="Иванов Иван Иванович" title="Введите ваше имя" minlength="4" maxlength="20"/>
+                        <input type="text" id="User_name" required  pattern="[A-Za-zА-Яа-яЁё\s]+"placeholder="Иванов Иван Иванович" title="Введите ваше имя" minlength="4" maxlength="50"/>
                     </div>
-                    /*<div class="input_information">
+                    <div class="input_information">
                         <label for="User_date">Дата рождения</label>
                         <input type="date" id="User_date" required title="Указывайте вашу настоящую дату рождения"/>
                     </div>
@@ -32,12 +30,12 @@
                             <option>Китай</option>
                         </select>
                     </div>
-                    <div class="input_information">
+                    <div class="input_information_gender">
                         <label for="User_gender">Укажите пол</label>
                         <div id="User_gender" required>
-                            <label for="gender_female">Женский</label>
+                            <label for="gender_female" class="gender">Женский</label>
                             <input type="radio" id="gender_female" name="user_gender"/>
-                            <label for="gender_male">Мужской</label>
+                            <label for="gender_male"  class="gender">Мужской</label>
                             <input type="radio" id="gender_male" name="user_gender"/>
                         </div>
                     </div>
@@ -70,12 +68,11 @@
                         <input type="checkbox" required id="User_agree"/>
                     </div>
                     <div class="buttons">
-                        <button class="primary">Зарегестрироваться</button>
+                        <button class="primary"  type="submit">Зарегестрироваться</button>
                         <button class="secondary">Очистить форму</button>
                     </div>
                 </form>
             </div>
         </section>
-  
     </body>
 </html>

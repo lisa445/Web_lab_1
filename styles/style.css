@@ -11,23 +11,51 @@ body{
 
 .registration_form h1{
     margin: 0;
+    margin-top: 20px;
     font-family: 'Grotesk';
     font-weight: 500;
     font-size: 35px;
+    text-align: center;
 }
-.input_information, .buttons{
+.input_information, .buttons, .input_information_gender{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.input_information{
-    border: 1px solid  #173C1C;
-    border-radius: 10px;
-    width:100%
+.input_information_gender div label{
+    font-weight: 500;
+    font-family:'RobotoL';
+    color: #173C1C;
 }
 
+.input_information, .input_information_gender{
+    border: 1px solid  #173C1C;
+    border-radius: 10px;
+    width:500px;
+    padding: 10px;
+    align-items: center;
+}
+
+.input_information textarea{
+    width:300px;
+    height: 100px;
+    resize: none;
+}
+
+
+.input_information textarea, .input_information input,  .input_information select{
+    width:250px;
+    background: transparent;
+    border:none;
+    font-weight: 500;
+    font-family:'RobotoL';
+    color: #173C1C;
+}
+
+
 .registration_form{
+    margin-top: 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -36,6 +64,6 @@ body{
     color: #173C1C;
     border: 1px solid  #173C1C;
     border-radius: 10px;
-    height: 700px;
+    height: 800px;
     width:40%
 }
